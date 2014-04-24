@@ -1,8 +1,8 @@
 import java.util.*;
 
-public class QSort {
+public class RadixSort {
 
-	public static void qSort(int[] a, int low, int high) {
+	public static void radixSort(int[] a) {
 	}
 
 	public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class QSort {
 				a[i] = rnd.nextInt();
 			}
 			int[] b = a.clone();
-			qSort(b, 0, n - 1);
+			radixSort(b);
 			Arrays.sort(a);
 			if (!Arrays.equals(a, b))
 				throw new RuntimeException();
